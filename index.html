@@ -8,7 +8,43 @@
     <script defer src ="script/script.js"></script>
 </head>
 <body>  
-    <h1> EXOOO DOM  </h1>
+    <div class="container">
+        <header>
+            <h1> Gestionnaire de Contacts</h1>
+        </header>
+
+        <section class="form-section">
+            <h2>Ajouter un contact</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="nom" required />
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" placeholder="prenom" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" placeholder="" required />
+                </div>
+                <div id="errorMessage" class="error-message hidden"></div>
+
+                <button type="submit" class="btn-add"> Ajouter le contact</button>
+            </form>
+        </section>
+
+        <section class="contacts-section">
+            <h2>Mes contacts <span id="contactCount">(0)</span></h2>
+            <div id="contactsGrid" class="contacts-grid">
+                <p class="empty-message" id="emptyMessage">Aucun contact pour l'instant...</p>
+            </div>
+        </section>
+    </div>
     
 </body>
 </html>
