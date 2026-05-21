@@ -1,0 +1,97 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fce4ec;
+    color: #333;
+    padding: 30px;
+}
+
+h2 {
+    color: #ad1457;
+    margin-bottom: 15px;
+    }
+
+form {
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ad1457;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #e91e8c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #c2185b;
+}
+
+.error-message {
+    color: #c21eac;
+    font-size: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+#liste-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.carte {
+    background: #fff0f5;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .avatar {
+    
+} */
+
+.carte h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.carte p {
+    font-size: 25px;
+    
+    word-break: break-all;
+}
+.carte button {
+    margin-top: 8px;
+    padding: 6px;
+    background: #e91e8c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
